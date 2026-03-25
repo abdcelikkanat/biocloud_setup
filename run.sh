@@ -17,7 +17,7 @@ set -eu
 
 
 # Define the project and data folders
-PROJECT_FOLDER=THIS_IS_THE_PROJECT_FOLDER_PATH
+PROJECT_FOLDER=UPDATE_THE_PROJECT_FOLDER
 DATA_FOLDER=/projects/dark_science/methylation_binning/development/data/datasets
 CHECKM2_DATABASE=/databases/checkm2/CheckM2_database/uniref100.KO.1.dmnd
 
@@ -50,6 +50,6 @@ $CMD
 
 # Run CheckM2
 export CHECKM2DB=${CHECKM2_DATABASE}
-CMD="${CHECKM2_EXE} predict -i ${BINS_FOLDER}/* -o ${CHECKM2_OUTPUT_FOLDER} -x .fa"
+CMD="${CHECKM2_EXE} predict -i ${BINS_FOLDER}/* -o ${CHECKM2_OUTPUT_FOLDER} --database_path ${CHECKM2_DATABASE} -x .fa"
 CMD="${CMD} -t ${CHECKM2_THREADS} --force"
 $CMD

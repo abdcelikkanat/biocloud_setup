@@ -42,6 +42,7 @@ srun --cpus-per-task 8 --mem 64G --time 0-04:00:00 pip install .
 conda deactivate
 conda create -p envs/checkm2 -c bioconda -c conda-forge checkm2
 conda activate envs/checkm2
+checkm2 database --setdblocation /databases/checkm2/CheckM2_database/uniref100.KO.1.dmnd
 ```
 
 #### (Optional) Run CheckM2 tests
