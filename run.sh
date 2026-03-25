@@ -12,12 +12,12 @@
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 
-# Exit on first error and if any variables are unset
+# Exit on first error, and if any variables are unset
 set -eu
 
 
 # Define the project and data folders
-PROJECT_FOLDER=/home/cs.aau.dk/zs74qz/workspace/luis
+PROJECT_FOLDER=THIS_IS_THE_PROJECT_FOLDER_PATH
 DATA_FOLDER=/projects/dark_science/methylation_binning/development/data/datasets
 CHECKM2_DATABASE=/databases/checkm2/CheckM2_database/uniref100.KO.1.dmnd
 
