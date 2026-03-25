@@ -1,3 +1,11 @@
+#### Clone the SemiBin2 repository and checkout the specific version (v2.2.1)
+```
+git clone https://github.com/BigDataBiology/SemiBin.git
+cd SemiBin
+git checkout 59122f2
+cd ..
+```
+
 #### Create and activate the SemiBin2 environment
 ```
 mkdir envs
