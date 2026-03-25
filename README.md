@@ -1,5 +1,6 @@
 #### Create and activate the SemiBin2 environment
 ```
+mkdir envs
 conda create -p envs/semibin python=3.12
 conda activate envs/semibin
 ```
