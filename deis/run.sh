@@ -9,18 +9,6 @@
 #SBATCH --time=48:00:00  #  time limit in dd:hh:mm:ss format. 
 
 
-# Define the global variables
-BASEFOLDER=/nfs/home/cs.aau.dk/zs74qz/biocloud_setup
-PYTHON=/
-SCRIPT_PATH=${BASEFOLDER}/
-RESULTS_FOLDER=${BASEFOLDER}/
-
-export PYTHONPATH=${PYTHONPATH}:${BASEFOLDER}
-
-echo "Hello"
-
+# CheckM2 TEST RUN
 /nfs/home/cs.aau.dk/zs74qz/biocloud_setup/SemiBin/envs/checkm2/bin/checkm2 testrun
-
-#source ${BASEFOLDER}/sh/evaluate.sh "${BASEFOLDER}" "${PYTHON}" "${SCRIPT_PATH}" "${RESULTS_FOLDER}"
-
 
