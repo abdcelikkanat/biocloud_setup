@@ -10,5 +10,6 @@
 
 
 # CheckM2 TEST RUN
-/nfs/home/cs.aau.dk/zs74qz/biocloud_setup/SemiBin/envs/checkm2/bin/checkm2 testrun
+CHECKM2_PATH=
+${CHECKM2_PATH}/bin/checkm2 testrun
 
